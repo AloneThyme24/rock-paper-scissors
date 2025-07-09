@@ -16,8 +16,11 @@ if (readySetGo < 0.33) {
 }
 
 //test function 
-console.log (getComputerChoice()) // the () are added after getComputerChoice so the function is run and the return value is logged
+// console.log (getComputerChoice()) 
+// the () are added after getComputerChoice so the function is run and the return value is logged
 
 // create a new function called getHumanChoice
+function getHumanChoice() {
 // getHumanChoice returns either "RPS" depending on user inputs
 // prompt method used to get users input
+}
