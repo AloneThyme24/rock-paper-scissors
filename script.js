@@ -3,10 +3,9 @@
 console.log("Hello World") */
 
 // create a function called getComputerChoice
-// this function will randomly return string values "rock", "paper", or "scissors"
 function getComputerChoice() {
+ // function to randomly return string values "rock", "paper", or "scissors" ("RPS")
 const readySetGo = Math.random(); // generates a number between 0 and 1; each if/else statement gives each option a 1/3 chance of happening
-
 if (readySetGo < 0.33) {
     return "rock"
 } else if (readySetGo < 0.66) {
@@ -16,9 +15,9 @@ if (readySetGo < 0.33) {
 }
 }
 
-/* test function 
-console.log (getComputerChoice()) */
+//test function 
+console.log (getComputerChoice()) // the () are added after getComputerChoice so the function is run and the return value is logged
 
 // create a new function called getHumanChoice
-// getHumanChoice returns either rock, paper, scissors (RPS) depending on user inputs
+// getHumanChoice returns either "RPS" depending on user inputs
 // prompt method used to get users input
