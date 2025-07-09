@@ -18,3 +18,7 @@ if (readySetGo < 0.33) {
 
 /* test function 
 console.log (getComputerChoice()) */
+
+// create a new function called getHumanChoice
+// getHumanChoice returns either rock, paper, scissors (RPS) depending on user inputs
+// prompt method used to get users input
