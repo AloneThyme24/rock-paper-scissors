@@ -16,11 +16,16 @@ if (readySetGo < 0.33) {
 }
 
 //test function 
-// console.log (getComputerChoice()) 
+// console.log (getComputerChoice());
 // the () are added after getComputerChoice so the function is run and the return value is logged
 
 // create a new function called getHumanChoice
-function getHumanChoice() {
+function getHumanChoice() { 
 // getHumanChoice returns either "RPS" depending on user inputs
 // prompt method used to get users input
+let userChoice = prompt("Choose rock, paper, or scissors");
+return userChoice; // return allows the input to not get trapped inside the function
 }
+
+// test function
+console.log(getHumanChoice());
