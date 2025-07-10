@@ -32,3 +32,7 @@ return userChoice; // return allows the input to not get trapped inside the func
 
 // want to keep track of the human and computer's score using variables
 //  initial score value for both players is 0
+
+let humanScore = 0;
+let computerScore = 0;
+// these are written in the global scope so they can be accessed from any function or across multiple function calls
