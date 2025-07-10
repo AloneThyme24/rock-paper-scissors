@@ -15,7 +15,7 @@ if (readySetGo < 0.33) {
 }
 }
 
-//test function 
+// test function 
 // console.log (getComputerChoice());
 // the () are added after getComputerChoice so the function is run and the return value is logged
 
@@ -28,4 +28,7 @@ return userChoice; // return allows the input to not get trapped inside the func
 }
 
 // test function
-console.log(getHumanChoice());
+// console.log(getHumanChoice());
+
+// want to keep track of the human and computer's score using variables
+//  initial score value for both players is 0
