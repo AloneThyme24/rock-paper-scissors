@@ -40,7 +40,7 @@ let computerScore = 0;
 // create playRound() as game is played in rounds
 // create parameters (info inside the "()""): humanChoice and computerChoice
 // choices are taken as arguments
-function playRound(HumanChoice, computerChoice) {
+function playRound(humanChoice, computerChoice) {
 // make humanChoice case insensitive
 humanChoice = humanChoice.toLowerCase();
 }
