@@ -37,6 +37,7 @@ let humanScore = 0;
 let computerScore = 0;
 // these are written in the global scope so they can be accessed from any function or across multiple function calls
 
+
 // create playRound() as game is played in rounds
 // create parameters (info inside the "()""): humanChoice and computerChoice
 // choices are taken as arguments
@@ -78,3 +79,10 @@ const computerSelection = getComputerChoice();
 
 /* execute a single round of the game
 console.log(playRound(humanSelection, computerSelection)); */
+
+// create logic to play 5 rounds
+
+// create function playGame()
+// playGame() includes playRound()
+// call playRound() 5x
+// recall choice functions to get new choices for each round
