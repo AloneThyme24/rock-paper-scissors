@@ -38,15 +38,19 @@ let computerScore = 0;
 // these are written in the global scope so they can be accessed from any function or across multiple function calls
 
 // create playRound() as game is played in rounds
-// create parameter (info inside the "()"") humanChoice; choices are taken as arguments
-// create parameter (info inside the "()"") computerChoice; choices are taken as arguments
-function playRound(getHumanChoice, computerChoice) {
+// create parameters (info inside the "()""): humanChoice and computerChoice
+// choices are taken as arguments
+function playRound(HumanChoice, computerChoice) {
 // make humanChoice case insensitive
+humanChoice = humanChoice.toLowerCase();
 }
 
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
 
+// make a string value using playRound() for the round winner
 
-// make a string value for the round winner
-
+// execute a single round of the game
+playRound(humanSelection, computerSelection);
 // increase score for round winner
