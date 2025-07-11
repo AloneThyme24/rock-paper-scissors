@@ -43,6 +43,24 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
 // make humanChoice case insensitive
 humanChoice = humanChoice.toLowerCase();
+// if human beats computer "human wins" add 1 to human score
+ if (humanChoice === "rock" && computerChoice === "scissors") {
+    return "Human wins! Rock crushed scissors!"
+} else if (humanChoice === "scissors" && computerChoice === "paper") {
+    return "Human wins! Scissors cut paper!"
+}  else if (humanChoice === "paper" && computerChoice === "rock") {
+    return "Human wins! Paper covers rock!"
+
+// Else if computer beats human "you loose" add 1 to computer score
+ } else if (computerChoice === "rock" && humanChoice === "scissors") {
+    return "Computer wins! Rock crushed scissors!"
+} else if (computerChoice === "scissors" && humanChoice === "paper") {
+    return "Computer wins! Scissors cut paper!"
+}  else if (computerChoice === "paper" && humanChoice === "rock") {
+    return "Computer wins! Paper covers rock!"
+    // If humanChoice === computerChoice "it's a tie"
+}   else if (humanChoice === computerChoice) {
+    return "It's a tie!"}
 }
 
 const humanSelection = getHumanChoice();
