@@ -40,6 +40,7 @@ let computerScore = 0;
 // create playRound() as game is played in rounds
 // create parameters (info inside the "()""): humanChoice and computerChoice
 // choices are taken as arguments
+// make a string value using playRound() announcing round winner
 function playRound(humanChoice, computerChoice) {
 // make humanChoice case insensitive
 humanChoice = humanChoice.toLowerCase();
@@ -74,9 +75,5 @@ humanChoice = humanChoice.toLowerCase();
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-
-// make a string value using playRound() for the round winner
-
-// execute a single round of the game
-playRound(humanSelection, computerSelection);
-// increase score for round winner
+/* execute a single round of the game
+console.log(playRound(humanSelection, computerSelection)); */
