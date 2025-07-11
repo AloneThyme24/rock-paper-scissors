@@ -72,6 +72,7 @@ humanChoice = humanChoice.toLowerCase();
 }
 }
 
+// call each function so input is grabbed and stored in each variable
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
