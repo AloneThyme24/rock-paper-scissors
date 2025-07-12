@@ -80,9 +80,9 @@ humanChoice = humanChoice.toLowerCase();
 }
 }
 
-// call each function so input is grabbed and stored in each variable
+/* call each function so input is grabbed and stored in each variable
 const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+const computerSelection = getComputerChoice(); -- not needed anymore since choices are called directly before each round*/
 
 /* execute a single round of the game
 console.log(playRound(humanSelection, computerSelection)); */
@@ -116,4 +116,22 @@ const human5 = getHumanChoice();
 const computer5 = getComputerChoice();
 console.log(playRound(human5, computer5));
 
+// final scores
+console.log("Final Scores:");
+
+// log actual values of scores
+console.log("Human:", humanScore);
+console.log("Computer:", computerScore);
+
+// declare the winner
+if (humanScore > computerScore) {
+  console.log("Human wins the game!");
+} else if (computerScore > humanScore) {
+  console.log("Computer wins the game!");
+} else {
+  console.log("It's a draw!");
 }
+}
+
+// initiate game
+playGame();
