@@ -4,8 +4,9 @@ console.log("Hello World") */
 
 // create a function called getComputerChoice
 function getComputerChoice() {
- // function to randomly return string values "rock", "paper", or "scissors" ("RPS")
-const readySetGo = Math.random(); // generates a number between 0 and 1; each if/else statement gives each option a 1/3 chance of happening
+ // above function to randomly return string values "rock", "paper", or "scissors" ("RPS")
+const readySetGo = Math.random(); 
+// above generates a number between 0 and 1; each if/else statement gives each option a 1/3 chance of happening
 if (readySetGo < 0.33) {
     return "rock"
 } else if (readySetGo < 0.66) {
@@ -24,7 +25,8 @@ function getHumanChoice() {
 // getHumanChoice returns either "RPS" depending on user inputs
 // prompt method used to get users input
 let userChoice = prompt("Choose rock, paper, or scissors");
-return userChoice; // return allows the input to not get trapped inside the function
+return userChoice; 
+// return allows the input to not get trapped inside the function
 }
 
 // test function
@@ -36,6 +38,11 @@ return userChoice; // return allows the input to not get trapped inside the func
 let humanScore = 0;
 let computerScore = 0;
 // these are written in the global scope so they can be accessed from any function or across multiple function calls
+
+// create function playGame()
+// playGame() includes playRound()
+function playGame() {
+// starting scores of 0 are global and accessible by all functions
 
 
 // create playRound() as game is played in rounds
@@ -80,9 +87,19 @@ const computerSelection = getComputerChoice();
 /* execute a single round of the game
 console.log(playRound(humanSelection, computerSelection)); */
 
-// create logic to play 5 rounds
+// set up playRound() above playGame()
 
-// create function playGame()
-// playGame() includes playRound()
+// call playRound() 5x and recall choice functions each round
+
+// call playRound() 1x
+
+// call playRound() 2x
+
+// call playRound() 3x
+
+// call playRound() 4x
+
 // call playRound() 5x
-// recall choice functions to get new choices for each round
+
+
+}
