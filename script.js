@@ -87,6 +87,14 @@ const rockButton = document.getElementById('rock');
 const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
 
+// select results div
+const resultsDiv = document.getElementById('results')
+
+// helper function to display result
+function displayResult(message) {
+    resultsDiv.textContent = message;
+}
+
 // Add event listener to Rock button
 rockButton.addEventListener('click', () => {
   const playerSelection = 'rock';
