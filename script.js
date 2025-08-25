@@ -80,14 +80,8 @@ humanChoice = humanChoice.toLowerCase();
 }
 }
 
-/* call each function so input is grabbed and stored in each variable
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice(); -- not needed anymore since choices are called directly before each round*/
+// Add event listeners to buttons to trigger playRound with the player's selection
 
-/* execute a single round of the game
-console.log(playRound(humanSelection, computerSelection)); */
-
-// set up playRound() above playGame()
 
 
 // final scores
