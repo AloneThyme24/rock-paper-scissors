@@ -82,6 +82,35 @@ humanChoice = humanChoice.toLowerCase();
 
 // Add event listeners to buttons to trigger playRound with the player's selection
 
+// Select buttons from the DOM
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+
+// Add event listener to Rock button
+rockButton.addEventListener('click', () => {
+  const playerSelection = 'rock';
+  const computerSelection = getComputerChoice();
+  const result = playRound(playerSelection, computerSelection);
+  console.log(result);
+});
+
+// Add event listener to Paper button
+paperButton.addEventListener('click', () => {
+  const playerSelection = 'paper';
+  const computerSelection = getComputerChoice();
+  const result = playRound(playerSelection, computerSelection);
+  console.log(result);
+});
+
+// Add event listener to Scissors button
+scissorsButton.addEventListener('click', () => {
+  const playerSelection = 'scissors';
+  const computerSelection = getComputerChoice();
+  const result = playRound(playerSelection, computerSelection);
+  console.log(result);
+});
+
 
 
 // final scores
