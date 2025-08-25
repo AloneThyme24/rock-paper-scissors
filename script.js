@@ -100,7 +100,7 @@ rockButton.addEventListener('click', () => {
   const playerSelection = 'rock';
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
-  console.log(result);
+  displayResult(result);
 });
 
 // Add event listener to Paper button
@@ -108,7 +108,7 @@ paperButton.addEventListener('click', () => {
   const playerSelection = 'paper';
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
-  console.log(result);
+  displayResult(result);
 });
 
 // Add event listener to Scissors button
@@ -116,7 +116,7 @@ scissorsButton.addEventListener('click', () => {
   const playerSelection = 'scissors';
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
-  console.log(result);
+  displayResult(result);
 });
 
 
