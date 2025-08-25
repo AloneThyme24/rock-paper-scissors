@@ -89,32 +89,6 @@ console.log(playRound(humanSelection, computerSelection)); */
 
 // set up playRound() above playGame()
 
-// call playRound() 5x and recall choice functions each round
-
-// call playRound() 1x
-const human1 = getHumanChoice();
-const computer1 = getComputerChoice();
-console.log(playRound(human1, computer1));
-
-// call playRound() 2x
-const human2 = getHumanChoice();
-const computer2 = getComputerChoice();
-console.log(playRound(human2, computer2));
-
-// call playRound() 3x
-const human3 = getHumanChoice();
-const computer3 = getComputerChoice();
-console.log(playRound(human3, computer3));
-
-// call playRound() 4x
-const human4 = getHumanChoice();
-const computer4 = getComputerChoice();
-console.log(playRound(human4, computer4));
-
-// call playRound() 5x
-const human5 = getHumanChoice();
-const computer5 = getComputerChoice();
-console.log(playRound(human5, computer5));
 
 // final scores
 console.log("Final Scores:");
