@@ -127,8 +127,17 @@ scissorsButton.addEventListener('click', () => {
   updateScoreboard();
 });
 
+// final results
+const finalResultsDiv = document.getElementById('final-results');
 
-
+function displayFinalResults() {
+  finalResultsDiv.innerHTML = `
+    <p>Final Scores:</p>
+    <p>Human: ${humanScore}</p>
+    <p>Computer: ${computerScore}</p>
+    <p>${getWinnerMessage()}</p>
+  `;
+}
 
 function getWinnerMessage() {
   if (humanScore > computerScore) {
