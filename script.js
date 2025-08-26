@@ -1,7 +1,3 @@
-/* check to see if JavaScript is linked correctly
-
-console.log("Hello World") */
-
 // create a function called getComputerChoice
 function getComputerChoice() {
  // above function to randomly return string values "rock", "paper", or "scissors" ("RPS")
@@ -16,9 +12,6 @@ if (readySetGo < 0.33) {
 }
 }
 
-// test function 
-// console.log (getComputerChoice());
-// the () are added after getComputerChoice so the function is run and the return value is logged
 
 // create a new function called getHumanChoice
 function getHumanChoice() { 
@@ -29,17 +22,11 @@ return userChoice;
 // return allows the input to not get trapped inside the function
 }
 
-// test function
-// console.log(getHumanChoice());
-
 // want to keep track of the human and computer's score using variables
 //  initial score value for both players is 0
 
 let humanScore = 0;
 let computerScore = 0;
-// these are written in the global scope so they can be accessed from any function or across multiple function calls
-// starting scores of 0 are global and accessible by all functions
-
 
 // create playRound() as game is played in rounds
 // create parameters (info inside the "()""): humanChoice and computerChoice
