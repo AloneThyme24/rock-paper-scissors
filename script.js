@@ -99,12 +99,18 @@ function displayResult(message) {
     resultsDiv.textContent = message;
 }
 
+function updateScoreboard() {
+  scoreHuman.textContent = `Human: ${humanScore}`;
+  scoreComputer.textContent = `Computer: ${computerScore}`;
+}
+
 // Add event listener to Rock button
 rockButton.addEventListener('click', () => {
   const playerSelection = 'rock';
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
+  updateScoreboard();
 });
 
 // Add event listener to Paper button
@@ -113,6 +119,7 @@ paperButton.addEventListener('click', () => {
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
+  updateScoreboard();
 });
 
 // Add event listener to Scissors button
@@ -121,6 +128,7 @@ scissorsButton.addEventListener('click', () => {
   const computerSelection = getComputerChoice();
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
+  updateScoreboard();
 });
 
 
