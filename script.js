@@ -38,10 +38,6 @@ return userChoice;
 let humanScore = 0;
 let computerScore = 0;
 // these are written in the global scope so they can be accessed from any function or across multiple function calls
-
-// create function playGame()
-// playGame() includes playRound()
-function playGame() {
 // starting scores of 0 are global and accessible by all functions
 
 
@@ -133,22 +129,13 @@ scissorsButton.addEventListener('click', () => {
 
 
 
-// final scores
-console.log("Final Scores:");
 
-// log actual values of scores
-console.log("Human:", humanScore);
-console.log("Computer:", computerScore);
-
-// declare the winner
-if (humanScore > computerScore) {
-  console.log("Human wins the game!");
-} else if (computerScore > humanScore) {
-  console.log("Computer wins the game!");
-} else {
-  console.log("It's a draw!");
+function getWinnerMessage() {
+  if (humanScore > computerScore) {
+    return "Human wins the game!";
+  } else if (computerScore > humanScore) {
+    return "Computer wins the game!";
+  } else {
+    return "It's a draw!";
+  }
 }
-}
-
-// initiate game
-playGame();
