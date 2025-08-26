@@ -88,7 +88,12 @@ const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
 
 // select results div
-const resultsDiv = document.getElementById('results')
+const resultsDiv = document.getElementById('results');
+
+// select scoring elements
+const scoreboard = document.getElementById('scoreboard');
+const scoreHuman = document.getElementById('human-score');
+const scoreComputer = document.getElementById('computer-score');
 
 // helper function to display result
 function displayResult(message) {
