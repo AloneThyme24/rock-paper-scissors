@@ -91,7 +91,6 @@ const scissorsButton = document.getElementById('scissors');
 const resultsDiv = document.getElementById('results');
 
 // select scoring elements
-const scoreboard = document.getElementById('scoreboard');
 const scoreHuman = document.getElementById('human-score');
 const scoreComputer = document.getElementById('computer-score');
 
