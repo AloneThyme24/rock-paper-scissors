@@ -12,7 +12,6 @@ if (readySetGo < 0.33) {
 }
 }
 
-
 // create a new function called getHumanChoice
 function getHumanChoice() { 
 // getHumanChoice returns either "RPS" depending on user inputs
@@ -23,7 +22,7 @@ return userChoice;
 }
 
 // want to keep track of the human and computer's score using variables
-//  initial score value for both players is 0
+// initial score value for both players is 0
 
 let humanScore = 0;
 let computerScore = 0;
@@ -47,7 +46,7 @@ humanChoice = humanChoice.toLowerCase();
     humanScore += 1;
     return "Human wins! Paper covers rock!"
 
-// Else if computer beats human "you loose" add 1 to computer score
+// else if computer beats human "you loose" add 1 to computer score
  } else if (computerChoice === "rock" && humanChoice === "scissors") {
     computerScore += 1;
     return "Computer wins! Rock crushed scissors!"
@@ -63,7 +62,7 @@ humanChoice = humanChoice.toLowerCase();
 }
 }
 
-// Add event listeners to buttons to trigger playRound with the player's selection
+// add event listeners to buttons to trigger playRound with the player's selection
 
 // Select buttons from the DOM
 const rockButton = document.getElementById('rock');
@@ -87,7 +86,7 @@ function updateScoreboard() {
   scoreComputer.textContent = `Computer: ${computerScore}`;
 }
 
-// Add event listener to Rock button
+// add event listener to Rock button
 rockButton.addEventListener('click', () => {
   const playerSelection = 'rock';
   const computerSelection = getComputerChoice();
@@ -97,7 +96,7 @@ rockButton.addEventListener('click', () => {
   checkGameEnd();
 });
 
-// Add event listener to Paper button
+// add event listener to Paper button
 paperButton.addEventListener('click', () => {
   const playerSelection = 'paper';
   const computerSelection = getComputerChoice();
@@ -107,7 +106,7 @@ paperButton.addEventListener('click', () => {
   checkGameEnd();
 });
 
-// Add event listener to Scissors button
+// add event listener to Scissors button
 scissorsButton.addEventListener('click', () => {
   const playerSelection = 'scissors';
   const computerSelection = getComputerChoice();
@@ -133,7 +132,7 @@ function checkGameEnd() {
   if (humanScore === 5 || computerScore === 5) {
     displayFinalResults();
 
-    // Optional: disable buttons so the game stops
+// disable buttons so the game stops
     rockButton.disabled = true;
     paperButton.disabled = true;
     scissorsButton.disabled = true;
