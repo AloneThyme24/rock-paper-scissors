@@ -126,6 +126,17 @@ function displayFinalResults() {
   `;
 }
 
+function checkGameEnd() {
+  if (humanScore === 5 || computerScore === 5) {
+    displayFinalResults();
+
+    // Optional: disable buttons so the game stops
+    rockButton.disabled = true;
+    paperButton.disabled = true;
+    scissorsButton.disabled = true;
+  }
+}
+
 function getWinnerMessage() {
   if (humanScore > computerScore) {
     return "Human wins the game!";
