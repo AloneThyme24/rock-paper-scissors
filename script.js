@@ -94,6 +94,7 @@ rockButton.addEventListener('click', () => {
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
   updateScoreboard();
+  checkGameEnd();
 });
 
 // Add event listener to Paper button
@@ -103,6 +104,7 @@ paperButton.addEventListener('click', () => {
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
   updateScoreboard();
+  checkGameEnd();
 });
 
 // Add event listener to Scissors button
@@ -112,6 +114,7 @@ scissorsButton.addEventListener('click', () => {
   const result = playRound(playerSelection, computerSelection);
   displayResult(result);
   updateScoreboard();
+  checkGameEnd();
 });
 
 // final results
